@@ -1,0 +1,165 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpanse: Unveiling the Cosmos with AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background for space theme */
+            color: #e6edf3; /* Light text for contrast */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899); /* Purple to Pink gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #161b22; /* Slightly lighter dark for cards */
+            border: 1px solid #30363d; /* Subtle border */
+        }
+        .btn {
+            background-color: #238636; /* GitHub green */
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4 px-6 md:px-12 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold gradient-text">Xpanse</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#overview" class="hover:text-purple-400 transition duration-300">Overview</a></li>
+                    <li><a href="#about" class="hover:text-purple-400 transition duration-300">About</a></li>
+                    <li><a href="#documents" class="hover:text-purple-400 transition duration-300">Documents</a></li>
+                    <li><a href="#contact" class="hover:text-purple-400 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative flex items-center justify-center min-h-[calc(100vh-80px)] bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0d1117/e6edf3?text=Cosmic+Background');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto text-center relative z-10 p-6 md:p-12">
+            <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 gradient-text">
+                Unveiling the Cosmos with AI
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Leveraging cutting-edge Artificial Intelligence and Machine Learning to explore the mysteries of galaxies and beyond.
+            </p>
+            <a href="#about" class="inline-block btn text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 md:px-12 bg-gray-900">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-12 gradient-text">About Xpanse</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Our Mission -->
+                <div class="card p-8 rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-2xl font-semibold mb-4 text-purple-300">Our Mission</h4>
+                    <p class="text-gray-300">
+                        Xpanse is dedicated to pushing the boundaries of astronomical research. We aim to develop and apply advanced AI and machine learning models to vast cosmic datasets, enabling new discoveries in galaxy formation, evolution, and the large-scale structure of the universe.
+                    </p>
+                </div>
+                <!-- Card 2: Our Approach -->
+                <div class="card p-8 rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-2xl font-semibold mb-4 text-purple-300">Our Approach</h4>
+                    <p class="text-gray-300">
+                        We utilize deep learning, neural networks, and pattern recognition algorithms to analyze complex astronomical images and spectroscopic data. Our focus is on identifying subtle features, classifying celestial objects, and modeling cosmic phenomena with unprecedented accuracy.
+                    </p>
+                </div>
+                <!-- Card 3: Impact -->
+                <div class="card p-8 rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-2xl font-semibold mb-4 text-purple-300">Our Impact</h4>
+                    <p class="text-gray-300">
+                        By automating and enhancing the analysis of astronomical data, Xpanse seeks to accelerate the pace of discovery, provide new insights into cosmic evolution, and contribute to a deeper understanding of our place in the universe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="py-16 px-6 md:px-12 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-12 gradient-text">Project Documents</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-3 text-pink-300">Research Paper: Galaxy Classification</h4>
+                    <p class="text-gray-400 mb-4">
+                        An in-depth look at our methodology for classifying galaxies using convolutional neural networks.
+                    </p>
+                    <a href="#" class="text-purple-400 hover:underline">Read Document (PDF)</a>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-3 text-pink-300">Technical Report: Data Pipeline</h4>
+                    <p class="text-gray-400 mb-4">
+                        Details on the data ingestion, preprocessing, and model training pipeline for Xpanse.
+                    </p>
+                    <a href="#" class="text-purple-400 hover:underline">View Report (Markdown)</a>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-3 text-pink-300">Project Roadmap 2025-2026</h4>
+                    <p class="text-gray-400 mb-4">
+                        Our plans for future development, new features, and research directions.
+                    </p>
+                    <a href="#" class="text-purple-400 hover:underline">Explore Roadmap</a>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-3 text-pink-300">Open Datasets & Codebase</h4>
+                    <p class="text-gray-400 mb-4">
+                        Access to the public datasets used and the open-source code repository.
+                    </p>
+                    <a href="#" class="text-purple-400 hover:underline">Visit GitHub Repo</a>
+                </div>
+            </div>
+            <p class="text-gray-400 mt-12 text-lg">
+                More documents and resources will be added soon!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact/Links Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8 gradient-text">Connect with Xpanse</h3>
+            <p class="text-lg text-gray-300 mb-8">
+                Interested in our work or want to collaborate? Reach out to us!
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:your.email@example.com" class="btn py-3 px-6 rounded-full shadow-md text-white hover:shadow-lg transition duration-300">
+                    Email Us
+                </a>
+                <a href="https://github.com/your-github-username/xpanse-project" target="_blank" class="btn py-3 px-6 rounded-full shadow-md text-white hover:shadow-lg transition duration-300">
+                    GitHub Repository
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 py-6 px-6 md:px-12 mt-auto">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Xpanse Project. All rights reserved.</p>
+            <p class="mt-2">Built with <span class="gradient-text">AI</span> and <span class="gradient-text">Passion</span>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
